@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,16 +7,106 @@
 :root {
     /* colors  */
 --primary: #e67e22;
+--btn: #e67e22;
+--btn-hover:#cf711f;
+--span:#cf711f;
+--btn-outline:#555;
+--main-white:#fff;
+--bg-tint:#fdf2e9;
+--h1: #333;
+--body-text: #555;
+--h1-size: 5.2rem;
 }
 html {
     font-size: 62.5%;
 }
 body {
-    font-family: sans-serif;
+    font-family:"Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: var(--body-text);
+    
 }
-h1 {
-    color: var(--primary)
+.section-hero {
+    background-color: var(--bg-tint);
+    padding: 9.6rem 2rem;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 130rem;
+    margin: 0 auto;
+    gap: 9.6rem;
+}
+.heading-primary {
+    color: var(--h1);
+    font-size: var(--h1-size);
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    letter-spacing: -0.5px;
+}
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    transition: background-color 1s;
+    
+}
+.btn-full:link, .btn-full:visited {
+    background-color: var(--btn);
+    color: var(--main-white);
+}
+.btn-full:active, .btn-full:hover {
+    background-color: var(--btn-hover);
+    
+}
+.btn-outline:link, .btn-outline:visited {
+    background-color: var(--main-white);
+    color: var(--btn-outline);
+}
+.btn-outline:active, .btn-outline:hover {
+    background-color: var(--bg-tint);
+    box-shadow: inset 0 0 0 3px var(--main-white);
+}
+.hero-img {
+    width: 100%;
+}
+.margin-right-sm {
+    margin-right: 1.6rem;
+}
+.delivered-meals {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+.delivered-imgs {
+    display: flex;
+}
+.delivered-imgs img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid var(--bg-tint);
+}
+.delivered-imgs img:last-child {
+    margin: 0;
+}
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight:600 ;
+}
+.delivered-text span {
+    color: #cf711f;
 }
