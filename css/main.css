@@ -10,10 +10,12 @@
 --btn: #e67e22;
 --btn-hover:#cf711f;
 --span:#cf711f;
+--nav-link-active:#cf711f;
 --btn-outline:#555;
 --main-white:#fff;
 --bg-tint:#fdf2e9;
 --h1: #333;
+--nav-links: #333;
 --body-text: #555;
 --h1-size: 5.2rem;
 }
@@ -27,9 +29,52 @@ body {
     color: var(--body-text);
     
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* fixed height for sticky nav later  */
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    background-color: var(--bg-tint);
+}
+.logo {
+    height: 2.2rem;
+}
+.main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+text-decoration: none;
+font-size: 1.6rem;
+color: var(--nav-links);
+transition: all 0.3s;
+font-weight: 300;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: var(--nav-link-active);
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    background-color: var(--btn);
+    color: var(--main-white);
+    border-radius: 9px;
+    padding: 1.2rem 2.4rem;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+background-color: var(--btn-hover);
+}
+/* **************************************  */
 .section-hero {
     background-color: var(--bg-tint);
-    padding: 9.6rem 2rem;
+    padding:4.8rem 0 9.6rem 2rem;
 }
 .hero {
     display: grid;
