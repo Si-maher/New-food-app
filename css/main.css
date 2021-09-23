@@ -164,6 +164,26 @@ background-color: var(--btn-hover);
     color: #cf711f;
 }
 /* ********************************  */
+.section-featured {
+    padding:4.8rem 0 2rem 0;
+}
+.heading-featured-in {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+.logos img {
+height: 3.2rem;
+filter: brightness(0);
+opacity: 50%;
+}
+/* ********************************  */
 .section-how {
     padding: 9.6rem 0;
 }
@@ -176,7 +196,7 @@ background-color: var(--btn-hover);
     display: grid;
     row-gap: 9.6rem;
     column-gap: .4rem;
-
+    
 }
 .grid-center-vertical {
     align-items: center;
@@ -203,7 +223,7 @@ background-color: var(--btn-hover);
     z-index: -2;
     padding-bottom: 60%;
     width: 60%;
-
+    
 }
 .step-img-box::after {
     width:45%;
@@ -241,4 +261,67 @@ background-color: var(--btn-hover);
 .step-description {
     font-size:1.8rem;
     line-height: 1.5;
+}
+/* ********************************  */
+.section-meals {
+    padding: 9.6rem 0;
+}
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0,0 ,0.075);
+    border-radius: 11px;
+    overflow: hidden;
+}
+.meal-img {
+    width: 100%;
+}
+.meal-content {
+    padding: 4.8rem;
+}
+.tag {
+    /* inline block to apply padding  */
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--h1);
+    border-radius: 100px;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+.tag--vegetarian {
+    background-color: #51cf66;
+    
+}
+.tag--vegan {
+    background-color:#94d82d;
+    margin-right: 4px;
+    
+}
+.tag--paleo {
+    background-color: #ffd43b;
+}
+.meal-title {
+    font-size: 2.4rem;
+    color: var(--h1);
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+.meal-attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.meal-attribute {
+    list-style: none;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.meal-icon {
+    color: var(--span);
 }
