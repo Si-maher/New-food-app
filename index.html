@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Omnifood is an AI powered food subscription that will make you eat healthy again, 365 days per year.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/queries.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <title>Document</title>
+    <title>Omnifood &mdash; healthy living</title>
 </head>
 <body>
     <header class="header">
@@ -380,25 +382,25 @@ I shall never visit a supermarket again!
                 <p class="cta-text">
                     Healthy, tasty and hassle free meals are waiting for you. Start eating well today. You can cancel or pause anytime. Oh, and the first meal is on <strong>us</strong>
                 </p>
-                <form class="cta-form" action="">
+                <form class="cta-form" name="sign-up" netlify>
                     <div>
 
                         <label for="full-name">Full name</label>
-                        <input type="text" id="full-name"
+                        <input type="text" id="full-name" name="full-name"
                         required placeholder="Bob">
                     </div>
                     <div>
 
                         <label for="email">Email</label>
                         <input type="text"
-                        id="email"
+                        id="email" name="email"
                         required
                         placeholder="me@gmail.com">
                     </div>
                     <div>
 
                         <label for="select-where">Where did you hear about us?</label>
-                        <select name="" id="select-where" required>
+                        <select name="select-where" id="select-where" required>
                             <option value="">Please choose an option</option>
                             <option value="friends">Friends and family</option>
                             <option value="youtube">Youtube</option>
